@@ -7,3 +7,7 @@ $ npm install
 
 ## Comando para correr la app
 $ npm run dev
+
+Screenshots
+![Figure 0.1](public/image.png)
+
