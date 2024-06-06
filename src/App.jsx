@@ -67,7 +67,6 @@ function App() {
         <NavComponent />
         <Map lat={latitude} lng={longitude} onMarkerPositionChange={handleMarkerPositionChange} />
         <DataComponent data={data} />
-
       </>
     );
 

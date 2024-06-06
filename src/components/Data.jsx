@@ -9,7 +9,8 @@ export const DataComponent = ({data}) => {
         <>
         
             <div className='wrapper-current'>
-                <h2>Información meteorológica actual</h2>
+                <h2>Información meteorológica del marcador</h2>
+                
                 <div className="current">
                     <div className="variable">
                         <h3>Temperatura</h3>
