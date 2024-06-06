@@ -20,7 +20,6 @@ function App() {
     setResult(false);
     setLoading(true);
     fetchData();
-    console.log('New marker position:', newPosition.lat, newPosition.lng);
   };
 
   const fetchData = async () => {
@@ -47,12 +46,13 @@ function App() {
 
       });
     } else {
+      
       setError('Geolocation is not supported by this browser.');
     }
   }, []);
 
   if (loading) {
-    return <div className='loading'>Cargando...</div>;
+    return <div className='loading'><div className="loader"></div></div>;
   }
 
   if (error) {
