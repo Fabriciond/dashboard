@@ -2,8 +2,8 @@ import React, { useCallback, useState, useEffect } from 'react'
 import { GoogleMap, useJsApiLoader, Marker } from '@react-google-maps/api';
 
 const containerStyle = {
-    width: 'all',
-    height: '400px'
+    width: '100%',
+    height: '300px'
 };
 
 
@@ -46,13 +46,12 @@ export function Map(props) {
         <GoogleMap
             mapContainerStyle={containerStyle}
             center={markerPosition}
-            zoom={8}
-            onLoad={onLoad}
-            onUnmount={onUnmount}
+            zoom={5}
+
             options={{ disableDefaultUI: true }}
         >
             { /* Child components, such as markers, info windows, etc. */
-                <Marker  position={markerPosition} draggable={true} onDragEnd={onMarkerDragEnd} />
+                <Marker zoom={7} position={markerPosition} draggable={true} onDragEnd={onMarkerDragEnd} />
 
             }
             <></>
