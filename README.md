@@ -15,3 +15,6 @@ Screenshots
 Graficas de los datos atmosfericos obtenidos
 ![Figure 0.2](public/graph.png)
 
+## Url del proyecto
+https://dashboard-phi-wine-73.vercel.app/
+
