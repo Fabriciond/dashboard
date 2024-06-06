@@ -9,11 +9,17 @@ export const DataComponent = () => {
     const [latitude, setLatitude] = useState(0);
     const [longitude, setLongitude] = useState(0);
     const [filter, setFilter] = useState("");
-
-    navigator.geolocation.getCurrentPosition(function (position) {
-        setLatitude(position.coords.latitude);
-        setLongitude(position.coords.longitude);
-    });
+    //conseder permisos de geolocalizacion
+    useEffect(() => {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition((position) => {
+                setLatitude(position.coords.latitude);
+                setLongitude(position.coords.longitude);
+            });
+        } else {
+            setError('Geolocation is not supported by this browser.');
+        }
+    }, []);
     useEffect(() => {
         const fetchData = async () => {
             try {
