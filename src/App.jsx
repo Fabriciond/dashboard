@@ -1,20 +1,20 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { FiltersComponent } from './components/Filters'
-import { MapComponent } from './components/Map'
-import { GraphsComponent } from './components/Graphs'
-
+import { DataComponent } from './components/Data';
+import { NavComponent } from './components/Navbar'
 import './App.css'
+
+
 
 function App() {
 
   return (
     <>
-      <FiltersComponent />
-      <MapComponent />
-      <GraphsComponent />
-      <h1>hola</h1>
+      <NavComponent />
+      <DataComponent />
     </>
-  )
+  );
 }
+
 
 export default App

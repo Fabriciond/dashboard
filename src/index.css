@@ -13,5 +13,5 @@ body{
   font-family: 'Poppins', sans-serif;
   background-color: var(--secondary-color);
   color: var(--white-color);
-  
+  scrollbar-width: thin;
 }

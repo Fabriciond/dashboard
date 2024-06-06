@@ -4,10 +4,7 @@ export const FiltersComponent = () => {
         <>
            <div className="wrapper-filters">
                 <div className="filters">
-                    <div className="filter">
-                        <label htmlFor="">Variable Climatica</label>
-                        <select name="" id=""></select>
-                    </div>
+                  
                     <div className="filter">
                         <label htmlFor="">Fecha</label>
                         <input type="date" name="" id="" />
