@@ -70,6 +70,17 @@
     background-color: var(--white-color);
     color: var(--secondary-color);
 }
+.filters button {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    cursor: pointer;
+    height: 40px;
+    width: 60px;
+}
 
 
 /* Data */
