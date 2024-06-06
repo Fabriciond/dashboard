@@ -39,7 +39,7 @@ export const GraphsComponent = (props) => {
     <>
       <div className="wrapper-graphs">
         <div className="graph">
-          <LineChart width={500} height={300} data={temperatureData}>
+          <LineChart width={400} height={300} data={temperatureData}>
             <CartesianGrid />
             <XAxis dataKey="time" padding={{ left: 30, right: 30 }} />
             <YAxis />
@@ -54,7 +54,7 @@ export const GraphsComponent = (props) => {
           </LineChart>
         </div>
         <div className="graph">
-          <LineChart width={500} height={300} data={windSpeedData}>
+          <LineChart width={400} height={300} data={windSpeedData}>
             <CartesianGrid />
             <XAxis dataKey="time" padding={{ left: 30, right: 30 }} />
             <YAxis />
@@ -69,7 +69,7 @@ export const GraphsComponent = (props) => {
           </LineChart>
         </div>
         <div className="graph">
-          <LineChart width={500} height={300} data={soilTemperatureData}>
+          <LineChart width={400} height={300} data={soilTemperatureData}>
             <CartesianGrid />
             <XAxis dataKey="time" padding={{ left: 30, right: 30 }} />
             <YAxis />
@@ -84,7 +84,7 @@ export const GraphsComponent = (props) => {
           </LineChart>
         </div>
         <div className="graph">
-          <LineChart width={500} height={300} data={uvIndexData}>
+          <LineChart width={400} height={300} data={uvIndexData}>
             <CartesianGrid />
             <XAxis dataKey="time" padding={{ left: 30, right: 30 }} />
             <YAxis />
